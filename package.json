@@ -1,0 +1,33 @@
+{
+  "name": "menubar-ng-electron-boilerplate",
+  "version": "1.0.0",
+  "description": "An electron menubar boilerplate application based on Angular",
+  "author": "Felix Vaucourt",
+  "main": "main.js",
+  "scripts": {
+    "build:mac": "electron-packager . MenuBar --platform=darwin --arch=x64 --version=0.36.0",
+    "build:linux": "electron-packager . MenuBar --platform=linux --arch=x64 --version=0.36.0",
+    "build:windows": "electron-packager . MenuBar --platform=win32 --arch=x64 --version=0.36.0",
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "Angular",
+    "Menubar",
+    "Boilerplate"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felvct/menubar-ng-electron-boilerplate"
+  },
+  "dependencies": {
+    "angular-electron": "^0.2.1",
+    "bootstrap": "^3.3.7",
+    "menubar": "^5.2.3"
+  },
+  "devDependencies": {
+    "electron": "^1.7.6",
+    "electron-packager": "^9.0.1"
+  }
+}
